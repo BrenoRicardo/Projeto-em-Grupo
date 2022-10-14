@@ -1,9 +1,10 @@
 body {
     height: 100vh;
-    background-image: url(../imagens/WhatsApp\ Image\ 2022-10-04\ at\ 16.26.11.jpeg);
-    background-position: center bottom;
+    background-image: url(../imagens/background.jpg);
     background-repeat: no-repeat;
-    background-size: 1300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
 }
 
 header {
@@ -16,15 +17,6 @@ header {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-/*estilização dos dois flexbox*/
-.container {
-    display: flex;
-    flex-direction: row;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    align-items: center;
-    font-size: 30px;
 }
 
 /*flexbox "seja bem vindo(a)"*/
@@ -42,31 +34,39 @@ header {
 .child {
     color: rgb(0, 0, 0);
     width: 25%;
-    height: 40px;
+    height: 48px;
     background-color: rgb(245, 167, 66);
     border: 0px;
     justify-content: flex-end;
     text-align: center;
     font-size: 14px;
     text-shadow: rgb(81, 80, 80) 0.1em 0.1em 0.2em;
-    padding: 10px;
+    padding-top: 14.5px;
 }
 
 /*segundo flexbox, lado esquerdo*/
 .start {
     background-color: rgb(0, 0, 0);
     width: 120%;
-    height: 40px;
-    text-shadow: 0 0 0.2em rgb(254, 133, 3), 0 0 0.2em rgb(130, 126, 126);
+    height: 48px;
+    text-shadow: 0 0 0.2em rgb(254, 133, 3), 0 0 0.2em rgb(158, 158, 158);
     padding-left: 15px;
-    padding-top: 2px;
+    padding-top: 5px;
+}
+
+/*estilização dos três flexbox*/
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    align-items: center;
+    font-size: 30px;
 }
 
 /*tirar formatação de link*/
-a {
+header a {
     color: black;
     text-decoration: none;
-    text-shadow: 0.1em 0.em 0.1em rgb(0, 0, 0);
     font-size: 100%;
 }
 
@@ -74,11 +74,66 @@ a:hover {
     color: rgb(222, 210, 210);
 }
 
-a:active {
-    color: rgb(243, 110, 1);
-}
-
 .color {
     color: black;
     text-decoration: underline 3px black;
+}
+
+/*estilização dos textos*/
+.s1 {
+    color: black;
+    padding-top: 85px;
+    text-align: center;
+    text-decoration: underline 10px solid chocolate;
+    text-underline-offset: 10px;
+    text-shadow: 0.1px 0.1px 0.6px rgb(199, 105, 4), 0 0 1em rgb(96, 94, 94), 0 0 0.2em rgb(255, 115, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.s2 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-top: 80px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(199, 105, 4), 0 0 1em rgb(185, 182, 182), 0 0 0.2em rgb(161, 74, 4);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section img {
+    border-radius: 20%;
+    width: 30%;
+}
+
+.s3 {
+    font-size: 25px;
+    padding-top: 100px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgb(199, 105, 4), 0 0 1em rgb(185, 182, 182), 0 0 0.2em rgb(161, 74, 4);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*estilização do footer*/
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 20px 0px;
+    text-shadow: 1px 1px 2px rgb(199, 105, 4), 0 0 1em rgb(138, 137, 137), 0 0 0.2em rgb(161, 74, 4);
+}
+
+footer img {
+    padding: 0px 10px 0px 16px;
+    width: 100px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: rgb(243, 110, 1);
 }

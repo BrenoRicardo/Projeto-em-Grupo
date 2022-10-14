@@ -1,10 +1,10 @@
 body {
+    height: 100vh;
     background-image: url(../imagens/background.jpg);
-    opacity: 0.9;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0px;
-    margin: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
 }
 
 header {
@@ -19,7 +19,31 @@ header {
     padding: 0;
 }
 
-/*estilização dos dois flexbox*/
+/*segundo flexbox, lado direito*/
+.child {
+    color: rgb(0, 0, 0);
+    width: 25%;
+    height: 48px;
+    background-color: rgb(245, 167, 66);
+    border: 0px;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 14px;
+    text-shadow: rgb(81, 80, 80) 0.1em 0.1em 0.2em;
+    padding-top: 14.5px;
+}
+
+/*segundo flexbox, lado esquerdo*/
+.start {
+    background-color: rgb(0, 0, 0);
+    width: 120%;
+    height: 48px;
+    text-shadow: 0 0 0.2em rgb(254, 133, 3), 0 0 0.2em rgb(158, 158, 158);
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+/*estilização dos três flexbox*/
 .container {
     display: flex;
     flex-direction: row;
@@ -28,70 +52,11 @@ header {
     font-size: 30px;
 }
 
-/*segundo flexbox, lado direito*/
-.child {
-    color: rgb(0, 0, 0);
-    width: 30%;
-    height: 40px;
-    background-color: rgb(245, 167, 66);
-    text-align: center;
-    border: 0;
-    justify-content: flex-end;
-    font-size: 14px;
-    text-shadow: rgb(81, 80, 80) 0.1em 0.1em 0.2em;
-    padding: 10px;
-}
-
-/*segundo flexbox, lado esquerdo*/
-.start {
-    background-color: rgb(0, 0, 0);
-    width: 120%;
-    height: 40px;
-    text-shadow: 0 0 0.2em rgb(255, 133, 2), 0 0 0.2em rgb(45, 43, 43);
-    padding-left: 15px;
-}
-
-/*imagem da pagquemsomos*/
-img {
-    height: 400px;
-    border-radius: 25%;
-}
-
-/*título pagquemsomos*/
-.text {
-    padding: 50px;
-    text-decoration: underline rgb(235, 124, 21);
-    font-size: 50px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-/*texto pagquemsomos*/
-.text1 {
-    width: 65%;
-    height: 400px;
-    font-size: 30px;
-    padding: 40px 0px 0px 40px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-shadow: 0.1rem 0.1em 0.5rem rgb(19, 19, 19);
-}
-
-/*frase final pagquemsomos*/
-.text2 {
-    padding-top: 40px;
-    padding: 40px;
-    color: rgba(255, 129, 11, 0.664);
-    font-size: 20px;
-    text-decoration: underline 10px rgb(0, 0, 0);
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-shadow: 0.1rem 0.1rem #333;
-}
-
 /*tirar formatação de link*/
-a {
+header a {
     color: black;
     text-decoration: none;
-    text-shadow: 0.1em 0.em 0.1em rgb(0, 0, 0);
-    font-size: 110%;
+    font-size: 100%;
 }
 
 a:hover {
@@ -107,10 +72,11 @@ a:active {
     text-decoration: underline 3px black;
 }
 
+/* formulario, cores, fontes */
 form {
     margin: px;
     padding: 80px;
-    font-family: Verdana,Tahoma,sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 15px;
     max-width: 500px;
 }
@@ -119,24 +85,26 @@ h1 {
     margin-bottom: 20px;
     margin-left: 20px;
     color: #ff9101;
-    text-shadow: 5px 5px 5px black;
+    text-shadow: 4px 4px 4px black;
 }
 
-input, textarea {
+input,
+textarea {
     width: 200px;
     padding: 10px;
     color: black;
     margin-left: 20px;
     margin-top: 10px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border: 1px solid;
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus {
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
     border-color: #000066;
     box-shadow: 5px 0px 9px #FFFF00;
-    background-color: #f89f56;
+    background-color: #f7c59d;
     color: black;
     font-weight: bold;
 }
@@ -162,6 +130,6 @@ textarea {
 
 form label {
     margin-left: 20px;
-    color: #FFFFFF;
+    color: #000000;
     font-weight: bold;
 }

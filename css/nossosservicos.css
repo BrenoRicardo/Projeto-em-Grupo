@@ -1,0 +1,216 @@
+body {
+    height: 170vh;
+    background-image: url(../imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*segundo flexbox, lado direito*/
+.child {
+    color: rgb(0, 0, 0);
+    width: 25%;
+    height: 48px;
+    background-color: rgb(245, 167, 66);
+    text-align: center;
+    border: 0px;
+    justify-content: flex-end;
+    font-size: 14px;
+    text-shadow: rgb(81, 80, 80) 0.1em 0.1em 0.2em;
+    padding-top: 14.5px;
+}
+
+/*segundo flexbox, lado esquerdo*/
+.start {
+    background-color: rgb(0, 0, 0);
+    width: 120%;
+    height: 48px;
+    text-shadow: 0 0 0.2em rgb(254, 133, 3), 0 0 0.2em rgb(158, 158, 158);
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+/*estilização dos três flexbox*/
+.container {
+    display: flex;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    align-items: center;
+    font-size: 30px;
+}
+
+/*tirar formatação de link*/
+header a {
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+}
+
+a:hover {
+    color: rgb(222, 210, 210);
+}
+
+a:active {
+    color: rgb(243, 110, 1);
+}
+
+.color {
+    color: black;
+    text-decoration: underline 3px black;
+    text-underline-offset: 3px;
+}
+
+/* empiriquitação do título da pág */
+section h2 {
+    text-decoration: underline rgb(235, 124, 21);
+    text-underline-offset: 5px;
+    text-align: center;
+}
+
+/* alinhamento do título */
+h3 {
+    text-align: center;
+}
+
+.flex {
+    flex-direction: column;
+}
+
+/* Flex Container */
+.container1 {
+    margin: 0 auto;
+    display: flex;
+}
+
+.item1 {
+    margin-left: 2%;
+    padding: 10px 0px 0px 15px;
+    width: 95%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    font-size: 1.5em;
+    margin-top: 30px;
+    background: url(../imagens/bronze1.jpg)center;
+    background-size: cover;
+    text-align: start;
+    text-shadow: 0.1em 0.1em 0.8em white;
+}
+
+.item2 {
+    margin-left: 2%;
+    margin-top: 30px;
+    padding: 10px 0px 0px 15px;
+    width: 95%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 1.5em;
+    background: url(../imagens/bronze2.jpg)center;
+    background-size: cover;
+    text-align: start;
+    text-shadow: 0.1em 0.1em 0.8em white;
+}
+
+.item3 {
+    margin-left: 2%;
+    margin-top: 30px;
+    padding: 10px 0px 0px 15px;
+    width: 95%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 1.5em;
+    background: url(../imagens/bronze312312943810.jpg)center;
+    background-size: cover;
+    text-align: start;
+    text-shadow: 0.1em 0.1em 0.8em white;
+}
+
+button {
+    border: none;
+    background: none;
+    margin-left: 2%;
+    opacity: none;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    backdrop-filter: blur(1px);
+    padding-bottom: 20px;
+}
+
+ul,
+p {
+    list-style: none;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+strong {
+    color: white;
+    text-decoration: underline #000;
+    text-underline-offset: 8px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    text-shadow: 0.1em 0.1em 0.7em rgb(8, 8, 8);
+    padding-left: 20px;
+}
+
+.modal {
+    display: none;
+    /* isso faz o modal ficar invisivel até o botão ser clicado */
+    position: fixed;
+    z-index: 1;
+    /* z index seria a posição que o objeto fica na 3a dimensão, se dois objetos possuirem z index, 
+    e o valor de um for maior que o outro, ele sobrepõe
+    o objeto cujo valor é menor*/
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* o modal é como um cobertor para a página. Ele ocupa todo o espaço possível, 
+    mas apenas quando acionado é possível ver/interagir com ele.*/
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* formatar o que tá dentro do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/*propriedades do botão de fechar o modal*/
+#span {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#span:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myButton {
+    color: #000;
+}

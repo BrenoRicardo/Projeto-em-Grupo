@@ -9,57 +9,58 @@
     <link rel="stylesheet" href="./css/contato.css">
 </head>
 
-
-    <header>
-        <div class="container">
-            <div class="start"><a href="index.html">@LIINEBRONZE</a></div>
-            <div class="child"><a href="quemsomos.html">Quem somos</a></div>
-            <div class="child"><a href="nossosprodutos.html">Nossos produtos</a></div>
-            <div class="child"><a href="nossaequipe.html">Nossa equipe</a></div>
-            <div class="child"><a href="contato.html">
-                    <div class="color">Contato
-                </a></div>
-        </div>
-        </div>
-    </header>
-
-
-
+<header>
+    <div class="container">
+        <div class="start"><a href="index.html">@LIINEBRONZE</a></div>
+        <div class="child"><a href="quemsomos.html">Quem somos</a></div>
+        <div class="child"><a href="nossosserviços.html">Nossos serviços</a></div>
+        <div class="child"><a href="nossaequipe.html">Nossa equipe</a></div>
+        <div class="child"><a href="contato.html">
+                <div class="color">Contato
+            </a></div>
+    </div>
+    </div>
+</header>
 
 <body>
-  <script src="./js/script.js"> </script>
+    <script src="./js/script.js"> </script>
 
-<form name="meu_form">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <form name="f1">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-    <h1>Entre em contato</h1>
-  
-    <input type="text" id="nomeid" placeholder="Seu Nome" required="required" name="nome" />
-    <label for="nome">Nome</label>
-    <br>
-    <br>
+        <h1>Entre em contato</h1>
 
-  
-    <input type="tel" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone" />
-    <label for="fone">Telefone</label>
-    <br>
-    <br>
+        <input type="text" id="nomeid" placeholder="Seu Nome" required="required" name="nome" />
+        <label for="nome"></label>
+        <br>
+        <br>
 
-  
-    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-    <label for="email">Email</label>
-    <br>
-    <br>
 
-  
-    <textarea placeholder="Deixe sua opnião"></textarea>
-    <br>
+        <input type="tel" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone" />
+        <label for="fone"></label>
+        <br>
+        <br>
 
-  
-    <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+        <table>
+            <tr>
+                <td>
+
+                    <input type="text" name="email" id="emailid" placeholder="seuemail@gmail.com"
+                        maxlength="60" size='65'>
+                </td>
+                <td>
+                    <div id="msgemail"></div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <textarea placeholder="Deixe sua opnião"></textarea>
+        <br>
+        <input type="button" class="enviar" onclick="Enviar(f1.email);" value="Enviar" />
 </body>
+
 </html>

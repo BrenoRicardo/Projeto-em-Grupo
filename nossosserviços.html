@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços</title>
+    <link rel="stylesheet" href="css/nossosservicos.css">
+    <script src="js/nossosservicos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="start"><a href="index.html">@LIINEBRONZE</a></div>
+            <div class="child"><a href="quemsomos.html">Quem somos</a></div>
+            <div class="child"><a href="nossosserviços.html">
+                    <div class="color">Nossos serviços
+                </a></div>
+        </div>
+        <div class="child"><a href="nossaequipe.html">Nossa equipe</a></div>
+        <div class="child"><a href="contato.html">Contato</a></div>
+        </div>
+    </header>
+    <br><br><br><br><br>
+    <section>
+        <h2>Serviços</h2>
+        <br><br>
+        <h3>Nossos serviços contam com 3 diferentes tipos de bronzeamento</h3>
+        <br>
+        <span class="container1 flex">
+            <div class="item1">Bronze de Respeito
+                <p>Contém</p> <br>
+                <ul>
+                    <li>Esfoliação</li>
+                    <li>Fixador nas alcinhas</li>
+                    <li> Parafina Power no corpo todo </li>
+                    <li>Produto mágico no corpo todo </li>
+                    <li> Gel relaxante</li>
+                </ul>
+                <br>
+
+                <strong>R$100.00</strong> <button id="btn" onclick="on()"> <strong>Agendar</strong></button>
+
+                <div id="modal" class="modal">
+
+                    <div class="modal-content">
+
+                        <p>
+                            <label for="adicional">Por favor selecione o serviço adicional (Será acrescentado o preço do
+                                adicional ao serviço base) <span id="span">&times;</span></label>
+                            <!--"&times" faz o x que fecha o modal-->
+
+                            <select name="add" id="ad" size:"4">
+                                <option value="1">Intensificação da marquinha (Acréscimo de R$30,00)</option>
+                                <option value="2">Banho de lua (Acréscimo de R$20,00)</option>
+                                <option value="0">Nada</option>
+
+
+                            </select>
+                            <br>
+                        <p id="outdes"></p>
+                        <label for="start">Selecione o dia:</label>
+
+                        <input type="date" id="data" name="date" min='2022-10-15' max='2022-12-31'>
+
+
+                        <button id="myButton">Enviar</button>
+
+
+
+                        <br><br>
+                        </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item2">Bronze de Excelência<br>
+                <p>Contém<br></p> <br>
+                <ul>
+                    <li>Esfoliação</li>
+                    <li>Montagem de biquíni</li>
+                    <li>Fixador nas alcinhas</li>
+                    <li> Parafina Power no corpo todo </li>
+                </ul>
+                <br>
+                <strong>R$80.00</strong> <button id="btn1" button onclick="on()"><strong>Agendar</strong></button>
+                <div id="modal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item3"> Bronze Tradicional<br>
+                <p>Contém<br></p> <br>
+                <ul>
+                    <li>Montagem de biquíni</li>
+                    <li>Fixador nas alcinhas</li>
+                    <li>Parafina comum no corpo todo</li>
+                </ul>
+                <br>
+                <strong>R$50.00</strong> <button id="btn2" onclick="on()"><strong>Agendar</strong></button>
+                <div id="modal" class="modal">
+
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </section>
+
+</body>
+
+</html>

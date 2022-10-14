@@ -37,7 +37,7 @@ header {
     justify-content: flex-end;
     font-size: 14px;
     text-shadow: rgb(81, 80, 80) 0.1em 0.1em 0.2em;
-    padding-top: 14.5px;
+    padding: 14.5px;
 }
 
 /*segundo flexbox, lado esquerdo*/
@@ -50,44 +50,18 @@ header {
     padding-top: 5px;
 }
 
-/*imagem da pagquemsomos*/
+/*imagem da equipe */
 img {
-    height: 450px;
-    border-radius: 25%;
-}
-
-/*título pagquemsomos*/
-.text {
-    padding: 140px 60px 0px 50px;
-    text-decoration: underline rgb(235, 124, 21);
-    font-size: 50px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-/*texto pagquemsomos*/
-.text1 {
-    width: 62%;
     height: 400px;
-    font-size: 30px;
-    padding: 40px 0px 0px 40px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    text-shadow: 0.1rem 0.1em 0.5rem rgb(19, 19, 19);
+    border-radius: 250%;
+    padding: 80px;
 }
 
-/*frase final pagquemsomos*/
-.text2 {
-    padding-top: 40px;
-    padding: 40px;
-    color: rgba(255, 129, 11, 0.664);
-    font-size: 20px;
-    text-decoration: underline 10px rgb(0, 0, 0);
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    text-shadow: 0.1rem 0.1rem #333;
-}
+
 
 /*tirar formatação de link*/
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-shadow: 0.1em 0.em 0.1em rgb(0, 0, 0);
     font-size: 110%;
@@ -104,4 +78,12 @@ a:active {
 .color {
     color: black;
     text-decoration: underline 3px black;
+}
+.Equipe{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    padding: 40px 0px 0px 40px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-shadow: 0.1rem 0.1em 0.5rem rgb(19, 19, 19);
 }
